@@ -2,7 +2,7 @@
 layout: post
 title:  "An Inaugural Benchmark"
 date:   2013-09-02
-caption: Don't listen to this
+caption:
 categories: music
 ---
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F108376665&color=ff6600&auto_play=false&show_artwork=false"></iframe>
