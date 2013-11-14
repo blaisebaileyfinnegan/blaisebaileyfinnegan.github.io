@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Thoughts on re-inventing the wheel"
+date:   2013-11-14
+categories: general
+---
