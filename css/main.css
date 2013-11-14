@@ -168,14 +168,14 @@ div.post-bit {
   text-decoration: none;
 }
 
-.general {
+.content-left {
   text-align: left;
   float: left;
   display: inline-block;
   width: 350px;
 }
 
-.music {
+.content-right {
   text-align: left;
   float: right;
   display: inline;
@@ -218,7 +218,7 @@ div.post-bit {
 .footer {
   font-size: 80%;
   color: #999;
-  margin-top: 2em;
+  margin: 0.2em 0 1em 0;
   font-weight: 300;
   float: right;
   display: block;
@@ -248,6 +248,8 @@ div.who-am-i {
   line-height: 1.4em;
   border-bottom: 1px solid #aaa;
   margin-bottom: 90px;
+  font-weight: 300;
+  color: #222;
 }
 
 
@@ -317,14 +319,16 @@ div.who-am-i {
 @media (max-width: 750px) {
   div.header {
     float: none;
-    margin: 0 auto 30px auto;
+    width: 90%;
+    margin: 0 auto 20px auto;
   }
 
   div.right {
+    width: 90%;
     margin: 0 auto;
   }
 
-  .general, .music {
+  .content-left, .content-right {
     float: none;
   }
 
@@ -335,6 +339,7 @@ div.who-am-i {
   div.site {
     width: 100%;
     border-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
