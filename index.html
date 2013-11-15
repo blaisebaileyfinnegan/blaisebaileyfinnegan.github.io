@@ -3,34 +3,104 @@ layout: default
 title: Michael Vu
 ---
 <div class="content-left">
-  <h1 class="section-title">Blog</h1>
-  <ul class="posts">
-    {% for post in site.categories['general'] %}
-    <li>
-      <div class="post-bit">
-        <div class="post-title">
-          {{ post.title }}
+  <div class="part">
+    <h1 class="section-title">Blog</h1>
+    <ul class="posts">
+      {% for post in site.categories['general'] limit:10 %}
+      <li>
+        <div class="post-bit">
+          <div class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+          <div class="post-date">{{ post.date | date_to_string }}</div>
         </div>
-        <div class="post-date">{{ post.date | date_to_string }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+      </li>
+      {% endfor %}
+    </ul>
+    <a class="view-all" href="/blog">
+      View all {{ site.categories.general | size }} posts
+    </a>
+  </div>
 </div>
 <div class="content-right">
-  <h1 class="section-title">Guitar</h1>
-  <ul class="posts">
-    {% for post in site.categories['music'] %}
-    <li>
-      <div class="post-bit">
-        <div class="post-title">
-          <a href="{{ post.url }}">{{ post.title }}</a>
+  <div class="part">
+    <h1 class="section-title">Guitar</h1>
+    <ul class="posts">
+      {% for post in site.categories['music'] limit:10 %}
+      <li>
+        <div class="post-bit">
+          <div class="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+          <div class="post-caption">{{ post.caption }}</div>
+          <div class="post-date">{{ post.date | date_to_string }}</div>
         </div>
-        <div class="post-caption">{{ post.caption }}</div>
-        <div class="post-date">{{ post.date | date_to_string }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
+      </li>
+      {% endfor %}
+    </ul>
+    <a class="view-all" href="/music">
+      View all {{ site.categories.music | size }} posts
+    </a>
+  </div>
 </div>
 <div class="clearer"><!-- --></div>
+<div class="projects">
+  <h1 class="section-title">Projects</h1>
+  {% for page in site.pages %}
+  {% if page.url contains 'projects' %}
+  <div class="project-bit">
+    <div class="project-title">
+      {% if page.home %}
+      <a href="{{ page.home }}" target="_blank">
+        {{ page.title }}
+      </a>
+      {% else %}
+      {{ page.title }}
+      {% endif %}
+    </div>
+    <div>
+      <a href="{{ page.code }}" target="_blank">
+        View code on GitHub
+      </a>
+    </div>
+    <div class="project-description">
+      {{ page.content }}
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+<div class="people">
+  <h1 class="section-title">Some Inspiring People</h1>
+  <ul>
+    <li>
+      John Mayer
+      <div>
+        Musician
+      </div>
+    </li>
+    <li>
+      Paul McCartney
+      <div>
+        and the Beatles
+      </div>
+    </li>
+    <li>
+      David Gilmour
+    </li>
+    <li>
+      Lucas Ou-yang
+      <div>
+        <a href="http://codelucas.com" target="_blank">codelucas.com</a>
+      </div>
+    </li>
+    <li>
+      <a href="http://www.quora.com/Evan-Priestley" target="_blank">
+        Evan Priestley
+      </a>
+      <div>
+        Overengineer
+      </div>
+    </li>
+  </ul>
+</div>
