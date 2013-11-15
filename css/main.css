@@ -23,10 +23,14 @@ html, body {
 }
 
 body {
+  font-weight: 300;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
   padding-bottom: 2em;
-  text-align: center;
+}
+
+div.part {
+  margin-bottom: 30px;
 }
 
 div.back {
@@ -35,19 +39,20 @@ div.back {
 }
 
 h1 {
+  font-weight: 300;
   line-height: 1.2em;
   color: #A60800;
-  font-weight: 300;
   font-size: 35px;
   font-family: 'Ubuntu';
 }
 
-p { margin: 1em 0; }
+p {
+  margin: 1em 0;
+}
 
 a {
   text-decoration: none;
   color: #00a;
-  font-weight: 300;
 }
 
 a:hover   { color: #000; }
@@ -79,9 +84,23 @@ a:hover   { color: #000; }
 /*****************************************************************************/
 
 div.post h2 {
-  font-weight: 400;
   font-size: 36px;
   margin: 40px 0 20px 0;
+}
+
+div.post ol li {
+  margin: 0 0 12px 6px;
+}
+
+div.post a {
+  text-decoration: underline;
+}
+
+div.post img {
+  margin: 40px auto;
+  max-width: 70%;
+  display: block;
+  border: 1px solid #000;
 }
 
 .photo {
@@ -94,13 +113,37 @@ div.post h2 {
 
 h1.section-title {
   font-family: 'Ubuntu';
-  font-weight: 300;
   color: #A60800;
-  margin: 10px 0 25px 0;
+  margin: 10px 0 15px 0;
+}
+
+div.people, div.projects {
+  border-top: 1px solid #bbb;
+  margin: 15px 0 70px 0;
+  padding-top: 15px;
+}
+
+div.project-bit {
+  margin-bottom: 25px;
+}
+
+div.project-title {
+  font-size: 24px;
+}
+
+div.project-description {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.4em;
 }
 
 h1.title {
   font-size: 64px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
 }
 
 h3.caption {
@@ -124,6 +167,18 @@ div.brand {
   border-bottom: 1px solid #ddd;
 }
 
+div.twitter {
+  margin: 15px 0;
+}
+
+div.sidebar-brand {
+  margin-bottom: 20px;
+}
+
+h1.sidebar-title {
+  color: #1D7373;
+}
+
 div.right {
   width: 720px;
   float: right;
@@ -131,7 +186,6 @@ div.right {
 
 div.post-date {
   line-height: 1.3em;
-  font-weight: 300;
   font-size: 14px;
   color: #999;
 }
@@ -154,6 +208,19 @@ div.post-container {
 div.post-bit {
   margin-bottom: 15px;
   text-align: left;
+}
+
+
+div.people > ul > li {
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 1.1em;
+  margin-bottom: 12px;
+}
+
+div.people > ul > li > div {
+  font-size: 16px;
+  color: #777;
 }
 
 .header {
@@ -190,7 +257,6 @@ div.post-bit {
 
 .caption {
   color: #999;
-  font-weight: 300;
 }
 
 .title a {
@@ -219,7 +285,6 @@ div.post-bit {
   font-size: 80%;
   color: #999;
   margin: 0.2em 0 1em 0;
-  font-weight: 300;
   float: right;
   display: block;
 }
@@ -247,9 +312,13 @@ div.who-am-i {
   font-size: 16px;
   line-height: 1.4em;
   border-bottom: 1px solid #aaa;
-  margin-bottom: 90px;
-  font-weight: 300;
+  margin-bottom: 10px;
   color: #222;
+}
+
+.view-all {
+  color: #339;
+  font-size: 110%;
 }
 
 

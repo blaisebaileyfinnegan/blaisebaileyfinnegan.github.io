@@ -1,0 +1,21 @@
+---
+layout: default
+title: Michael Vu - Music
+---
+<h1 class="section-title">Guitar</h1>
+<ul class="posts">
+  {% for post in site.categories['music'] %}
+  <li>
+    <div class="post-bit">
+      <div class="post-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <div class="post-caption">{{ post.caption }}</div>
+      <div class="post-date">{{ post.date | date_to_string }}</div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+<a href="/">
+  Back to home
+</a>
