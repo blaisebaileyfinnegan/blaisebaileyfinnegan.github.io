@@ -6,7 +6,7 @@ title: Michael Vu
   <div class="part">
     <h1 class="section-title">Blog</h1>
     <ul class="posts">
-      {% for post in site.categories['general'] limit:10 %}
+      {% for post in site.categories['general'] limit:3 %}
       <li>
         <div class="post-bit">
           <div class="post-title">
@@ -26,7 +26,7 @@ title: Michael Vu
   <div class="part">
     <h1 class="section-title">Guitar</h1>
     <ul class="posts">
-      {% for post in site.categories['music'] limit:10 %}
+      {% for post in site.categories['music'] limit:3 %}
       <li>
         <div class="post-bit">
           <div class="post-title">
@@ -71,8 +71,14 @@ title: Michael Vu
   {% endfor %}
 </div>
 <div class="people">
-  <h1 class="section-title">People</h1>
+  <h1 class="section-title">People I follow</h1>
   <ul>
+    <li>
+      Jon Hopkins
+      <div>
+        DJ
+      </div>
+    </li>
     <li>
       John Mayer
       <div>
@@ -87,20 +93,6 @@ title: Michael Vu
     </li>
     <li>
       David Gilmour
-    </li>
-    <li>
-      Lucas Ou-yang
-      <div>
-        <a href="http://codelucas.com" target="_blank">codelucas.com</a>
-      </div>
-    </li>
-    <li>
-      <a href="http://www.quora.com/Evan-Priestley" target="_blank">
-        Evan Priestley
-      </a>
-      <div>
-        Overengineer
-      </div>
     </li>
   </ul>
 </div>
