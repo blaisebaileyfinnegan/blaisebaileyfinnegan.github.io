@@ -10,14 +10,14 @@ title: Michael Vu
       <li>
         <div class="post-bit">
           <div class="post-title">
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url  | prepend:site.baseurl }}">{{ post.title }}</a>
           </div>
           <div class="post-date">{{ post.date | date_to_string }}</div>
         </div>
       </li>
       {% endfor %}
     </ul>
-    <a class="view-all" href="/blog">
+    <a class="view-all" href="{{ '/blog' | prepend:site.baseurl }}">
       View all {{ site.categories.general | size }} posts
     </a>
   </div>
@@ -30,7 +30,7 @@ title: Michael Vu
       <li>
         <div class="post-bit">
           <div class="post-title">
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
           </div>
           <div class="post-caption">{{ post.caption }}</div>
           <div class="post-date">{{ post.date | date_to_string }}</div>
@@ -38,7 +38,7 @@ title: Michael Vu
       </li>
       {% endfor %}
     </ul>
-    <a class="view-all" href="/music">
+    <a class="view-all" href="{{ '/music' | prepend:site.baseurl }}">
       View all {{ site.categories.music | size }} posts
     </a>
   </div>

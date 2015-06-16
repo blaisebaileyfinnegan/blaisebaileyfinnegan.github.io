@@ -18,7 +18,7 @@ website's database just to delete stuff. And if I wanted to edit posts? Oh boy, 
 
 See where I'm going with this? By the end of the day, it was defeating the original purpose of my website. I wanted to spend time creating content, not maintaining the tool needed to present it. More specifically, I was re-inventing the wheel and growing tired of it.
 
-![How I felt](/img/scream-externally.png)
+![How I felt](/old/img/scream-externally.png)
 
 Imagine you need some city transportation, so you decide to build a car.
 
